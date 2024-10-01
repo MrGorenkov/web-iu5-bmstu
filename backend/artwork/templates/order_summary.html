@@ -4,16 +4,16 @@
 
 {% block content_body %}
     <div class="order-container">
-        <h1 class="order-title">Сформированная заявка</h1>
+        <h1 class="order-title">Список картин на экспертизу</h1>
 
         <div class="order-details">
-            <h3>Картины в вашей заявке:</h3>
+            <h3>Картины в вашем списке:</h3>
 
             <div class="order-items">
                 {% for painting in data %}
                 <div class="order-item">
                     <div class="item-image">
-                        <img src="{{ painting.img_path }}" alt="{{ painting.title }}" class="component-img">
+                        <img src="{{ painting.img_path }}" alt="{{ painting.title }}" class="painting-img">
                     </div>
                     <div class="item-details">
                         <h5>{{ painting.title }}</h5>
