@@ -100,7 +100,7 @@ def paintings_list(request):
     # Фильтрация по названию или цене
     filtered_paintings = [
         painting for painting in paintings
-        if search_query in painting['title'].lower() or search_query in str(painting['price'])
+        if search_query in painting['title'].lower()
     ]
     # Формируем путь к изображениям для каждого элемента списка
     for painting in filtered_paintings:
