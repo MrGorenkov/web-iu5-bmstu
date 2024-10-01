@@ -271,7 +271,7 @@ header {
 /* ------------------------------------------------------------------------- */
 
 /* Стили для страницы с деталями картины */
-.component-detail {
+.painting-detail {
     display: flex; /* Размещаем картину и информацию рядом */
     align-items: flex-start;
     justify-content: flex-start;
@@ -279,18 +279,18 @@ header {
     padding: 20px;
 }
 
-.component-img {
+.painting-img {
     width: 750px; /* Ширина изображения (можно изменить по желанию) */
     height: 600px; 
     object-fit: cover;
     margin-right: 50px; /* Отступ между изображением и информацией */
 }
 
-.component-info {
+.painting-info {
     max-width: 60%; /* Максимальная ширина информации */
 }
 
-.component-info h1 {
+.painting-info h1 {
     font-size: 26px; 
     color: #A66F2B; /* Цвет заголовка */
     margin-bottom: 10px;
@@ -298,24 +298,24 @@ header {
 }
 
 
-.component-info p {
+.painting-info p {
     font-size: 18px; 
     line-height: 1.5;
     color: #333; /* Цвет описания */
 }
 
-.component-info p strong {
+.painting-info p strong {
     font-size: 24px; 
     color: #A66F2B; 
 }
 
-.component-info .volume-info {
+.painting-info .volume-info {
     font-size: 24px; 
     font-weight: bold;
     margin-top: 20px;
 }
 
-.component-info .price-info {
+.painting-info .price-info {
     font-size: 24px; 
     font-weight: bold;
     margin-top: 20px;
