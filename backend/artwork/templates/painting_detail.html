@@ -3,14 +3,16 @@
 {% block title %}{{ painting.title }}{% endblock %}
 
 {% block content_body %}
-    <div class="painting-detail">  
-        <img src="{{ painting.img_path }}" alt="{{ painting.title }}" class="painting-img"> 
+<div class="painting-detail">  
+    <img src="{{ painting.img_path }}" alt="{{ painting.title }}" class="painting-img"> 
+    
+    <div class="painting-info"> 
+        <h1>{{ painting.title }}</h1>
+        <p>{{ painting.description }}</p> 
         
-        <div class="painting-info"> 
-            <h1>{{ painting.title }}</h1>
-            
-            <p>{{ painting.description }}</p> 
-            <p class="price-info"><strong>Стоимость:</strong> {{ painting.price }} руб.</p> 
-        </div>
+
+        
     </div>
+</div>
+
 {% endblock %}
