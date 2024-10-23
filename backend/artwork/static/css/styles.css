@@ -79,8 +79,8 @@ header {
     opacity: 0.8;
 }
 
-/* Общий контейнер корзины с плавным переходом */
-.busket {
+/* Общий контейнер для заявок с плавным переходом */
+.expertise_list {
     position: absolute;
     right: 20px;
     top: 50%;
@@ -90,13 +90,13 @@ header {
     transition: transform 0.3s ease; 
 }
 
-/* Изображение корзины */
-.busket img {
+/* Изображение списка экспертизы */
+.expertise_list img {
     height: 50px;
 }
 
 /* Счетчик товаров */
-.busket_count {
+.expertise_count {
     position: absolute;
     top: 1px;
     right: 1px;
@@ -112,11 +112,11 @@ header {
     transition: background-color 0.3s ease; 
 }
 
-.busket:hover {
+.expertise_list:hover {
     transform: scale(1); 
 }
 
-.busket:hover .busket_count {
+.expertise_list:hover .expertise_count {
     background-color:  #a9be71; 
 }
 
@@ -235,17 +235,13 @@ header {
     color: #A66F2B;
     font-size: 18px;
     text-decoration: none;
+    position: relative;
+    left: -450px; /* Сдвиг влево на 10px */
 }
+
 
 .item-more:hover {
     text-decoration: underline;
-}
-
-/* Кнопки для изменения количества товара */
-.item-quantity {
-    display: flex;
-    align-items: center;
-    margin-left: 600px;
 }
 
 .qty-btn {
@@ -296,7 +292,6 @@ header {
     margin-bottom: 10px;
     font-weight: bold; /* Жирный шрифт */
 }
-
 
 .painting-info p {
     font-size: 18px; 
